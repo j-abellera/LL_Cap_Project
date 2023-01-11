@@ -1,0 +1,25 @@
+.nav-container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 2fr 7fr;
+    border: solid 2px orange;
+}
+
+.nav {
+    border: solid 1px purple;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 75px;
+    border: solid 2px black;
+}
