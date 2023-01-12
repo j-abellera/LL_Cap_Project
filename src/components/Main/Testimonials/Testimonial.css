@@ -2,29 +2,47 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: solid 1px blueviolet;
-    width: 250px;
-    height: 250px;
+    /* border: solid 1px blueviolet; */
+    width: 200px;
+    height: 200px;
     margin: 0 2%;
     padding: 2%;
     grid-template-areas:'rt rt . . .'
                         'r r n n n'
                         '. tr tr tr .'
     ;
+    background-color: #edefee;
+    border-radius: 16px;
 }
 
 .rating-title {
     grid-area: rt;
+    /* border: solid 1px green; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .rating {
     grid-area: r;
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: #f4ce14;
+    border-radius: 16px;
+    box-shadow: 2px 2px #caac12;
 }
 
 .t-name {
     grid-area: n;
+    /* border: solid 1px darkblue; */
+    padding: 20px 0 0 10px;
 }
 
 .t-review {
     grid-area: tr;
+    padding-top: 40px;
+    text-align: center;
 }

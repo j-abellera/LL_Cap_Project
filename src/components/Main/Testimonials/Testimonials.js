@@ -5,7 +5,7 @@ import Testimonial from './Testimonial.js';
 function Testimonials() {
     return (
         <>
-            <h1 className='testimonials-title'>Testimonials Section</h1>
+            <h1 className='testimonials-title'>Testimonials</h1>
             <div className='testimonial-container'>
                 <Testimonial />
                 <Testimonial />
