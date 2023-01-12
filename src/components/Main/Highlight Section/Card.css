@@ -1,0 +1,39 @@
+.card-container {
+    border: solid 2px lightcoral;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr 2fr 1fr;
+    grid-template-areas:'card-image card-image'
+                        'card-title card-price'
+                        'card-description card-description'
+                        'card-link .'
+;
+
+    width: 350px;
+    height: 100%;
+}
+
+.card-image {
+    grid-area: card-image;
+    border: solid 1px forestgreen;
+}
+
+.card-title {
+    grid-area: card-title;
+    border: solid 1px hotpink;
+}
+
+.card-description {
+    grid-area: card-description;
+    border: solid 1px orange;
+}
+
+.card-price {
+    grid-area: card-price;
+    border: solid 1px yellowgreen;
+}
+
+.card-link {
+    grid-area: card-link;
+    border: solid 1px thistle;
+}

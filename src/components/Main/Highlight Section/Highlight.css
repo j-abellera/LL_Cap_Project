@@ -1,0 +1,23 @@
+.highlight-container {
+    border: solid 1px royalblue;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.highlight-left {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.highlight-left div {
+    border: solid 2px black;
+    width: 200px;
+    height: 75px;
+}
+
+.highlight-card-container {
+    border: solid 1px orange;
+    display: flex;
+    justify-content: space-between;
+}
