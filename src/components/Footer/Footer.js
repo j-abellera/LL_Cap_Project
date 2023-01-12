@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className='footer-container'>
-            <div className='footer-image'>Image Goes Here</div>
+            <div className='footer-image'></div>
             <div className='footer-nav'>
                 <h4 className='fnav-title'>Navigation</h4>
                 <ul>

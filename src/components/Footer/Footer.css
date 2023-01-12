@@ -1,5 +1,5 @@
 .footer-container {
-    border: solid 1px turquoise;
+    /* border: solid 1px turquoise; */
     width: 100%;
     margin: auto;
     padding: 2% 10%;
@@ -7,13 +7,16 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 'image nav . contact . social';
+    background-color: #495e57;
 }
 
 .footer-image {
+    background-image: url(/src/images/logo_monochrome.png);
     grid-area: image;
-    border: solid 2px aqua;
-    width: 131px;
-    height: 175px;
+    /* border: solid 2px aqua; */
+    width: 125px;
+    height: 180px;
+    background-position: center;
 }
 
 .footer-nav {
@@ -22,6 +25,8 @@
 
 .fnav-title, .contact-title, .social-title {
     margin-bottom: 10px;
+    color: #edefee;
+    font-weight: bolder;
 }
 
 .footer-contact {
@@ -34,4 +39,9 @@
 
 ul li {
     list-style: none;
+    color: #edefee;
+}
+
+address {
+    color: #edefee;
 }
