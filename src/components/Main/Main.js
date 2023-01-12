@@ -3,6 +3,7 @@ import './Main.css';
 import Hero from './Hero Section/Hero.js';
 import Highlight from './Highlight Section/Highlight.js';
 import Testimonials from './Testimonials/Testimonials.js';
+import About from './About/About.js';
 
 function Main() {
     return (
@@ -10,7 +11,7 @@ function Main() {
             <section id='hero-section'><Hero /></section>
             <section id='highlight-section'><Highlight /></section>
             <section id='testimonials-section'><Testimonials /></section>
-            <section id='about-section'>About Little Lemon Section</section>
+            <section id='about-section'><About /></section>
         </main>
     )
 }
