@@ -1,0 +1,11 @@
+.testimonial-container {
+    display: flex;
+    border: solid 2px darkmagenta;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.testimonials-title {
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.t-card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: solid 1px blueviolet;
+    width: 250px;
+    height: 250px;
+    margin: 0 2%;
+    padding: 2%;
+    grid-template-areas:'rt rt . . .'
+                        'r r n n n'
+                        '. tr tr tr .'
+    ;
+}
+
+.rating-title {
+    grid-area: rt;
+}
+
+.rating {
+    grid-area: r;
+}
+
+.t-name {
+    grid-area: n;
+}
+
+.t-review {
+    grid-area: tr;
+}
