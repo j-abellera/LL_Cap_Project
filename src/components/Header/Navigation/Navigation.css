@@ -5,21 +5,24 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: 2fr 7fr;
-    border: solid 2px orange;
+    /* border: solid 2px orange; */
 }
 
 .nav {
-    border: solid 1px purple;
+    /* border: solid 1px purple; */
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-weight: bolder;
+    padding-left: 15%;
 }
 
 .logo {
-    background-image: url('https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg');
+    background-image: url(/src/images/Logo.svg);
     background-position: center;
-    background-size: cover;
-    width: 150px;
-    height: 75px;
-    border: solid 2px black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 140px;
+    /* border: solid 2px black; */
 }
