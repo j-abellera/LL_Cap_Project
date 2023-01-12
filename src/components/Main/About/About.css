@@ -1,5 +1,5 @@
 .about-container {
-    border: solid 1px firebrick;
+    /* border: solid 1px firebrick; */
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,17 +19,22 @@
 
 .about-title {
     grid-area: title;
+    font-size: 64px;
+    /* border: solid 1px palegreen; */
+    display: flex;
+    align-items: flex-end;
 }
 .about-sub {
     grid-area: sub;
+    font-size: 40px;
 }
 .about-description {
     grid-area: desc;
 }
 
 .about-image {
-    border: solid 2px navajowhite;
-    padding: 5%;
+    /* border: solid 2px navajowhite; */
+    padding: 0%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: flex-end;
@@ -38,18 +43,28 @@
 }
 
 .about-img1 {
-    border: solid 2px teal;
+    /* border: solid 2px teal; */
     width: 225px;
     height: 300px;
     grid-column: 1;
     grid-row: 1;
     margin: 0 0 auto 70%;
+    background-image: url(/src/images/Mario\ and\ Adrian\ b.jpg);
+    background-size: 300%;
+    background-position: 75% 90%;
+    z-index: 1;
+    border-radius: 16px;
 }
 
 .about-img2 {
-    border: solid 2px thistle;
+    /* border: solid 2px thistle; */
+    background-image: url(/src/images/restaurant\ chef\ B.jpg);
     width: 225px;
     height: 300px;
     grid-column: 1;
     grid-row: 1;
+    z-index: -1;
+    background-size: 250%;
+    background-position: 50% 50%;
+    border-radius: 16px;
 }
