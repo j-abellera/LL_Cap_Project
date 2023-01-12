@@ -1,5 +1,5 @@
 .card-container {
-    border: solid 2px lightcoral;
+    /* border: solid 2px lightcoral; */
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 1fr 2fr 1fr;
@@ -11,29 +11,47 @@
 
     width: 350px;
     height: 100%;
+    border-radius: 16px;
+    background-color: #edefee;
+    color: #333333;
 }
 
 .card-image {
     grid-area: card-image;
-    border: solid 1px forestgreen;
+    /* border: solid 1px forestgreen; */
+    background-image: url(/src/images/lemon\ dessert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 16px 16px 0 0;
 }
 
 .card-title {
     grid-area: card-title;
-    border: solid 1px hotpink;
+    /* border: solid 1px hotpink; */
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px 0 0 10px;
 }
 
 .card-description {
     grid-area: card-description;
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
+    padding-left: 10px;
+    font-size: 16px;
 }
 
 .card-price {
     grid-area: card-price;
-    border: solid 1px yellowgreen;
+    /* border: solid 1px yellowgreen; */
+    padding: 10px;
+    color: #ee9972;
 }
 
 .card-link {
     grid-area: card-link;
-    border: solid 1px thistle;
+    /* border: solid 1px thistle; */
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 18px;
 }

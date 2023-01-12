@@ -6,8 +6,8 @@ function Highlight() {
     return (
         <div className='highlight-container'>
             <div className='highlight-left'>
-                <h2>Highlights Title "Specials"</h2>
-                <div>BUTTON "Order Online"</div>
+                <h2 className='highlight-title'>Our specials of the week!</h2>
+                <div className='highlight-button'>Order Online</div>
             </div>
             <div className='highlight-card-container'>
                 <div className='highlight-card'><Card /></div>

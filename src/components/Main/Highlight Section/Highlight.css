@@ -1,5 +1,5 @@
 .highlight-container {
-    border: solid 1px royalblue;
+    /* border: solid 1px royalblue; */
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -12,13 +12,31 @@
 }
 
 .highlight-left div {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     width: 200px;
     height: 75px;
 }
 
 .highlight-card-container {
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
     display: flex;
     justify-content: space-between;
+}
+
+.highlight-title {
+    font-size: 64px;
+}
+
+.highlight-button {
+    height: 50px;
+    width: 175px;
+    margin-top: 5%;
+    /* border: solid 1px saddlebrown; */
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4ce14;
+    border-radius: 16px;
 }
