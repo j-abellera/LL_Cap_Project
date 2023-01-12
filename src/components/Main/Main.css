@@ -9,3 +9,13 @@ section {
     border: solid 1px hotpink;
     padding: 3% 0;
 }
+
+#hero-section {
+    background: linear-gradient(
+        to bottom,
+        #495E57 0%,
+        #495E57 75%,
+        white 75%,
+        white 100%
+    );
+}

@@ -1,5 +1,5 @@
 .hero-container {
-    border: solid 3px gold;
+    /* border: solid 3px gold; */
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,28 +14,48 @@
 }
 
 .hero-title {
+    font-size: 64px;
     height: 15%;
-    border: solid 1px firebrick;
+    /* border: solid 1px firebrick; */
+    color: #f4ce14;
 }
 
 .hero-sub {
     height: 10%;
-    border: solid 1px burlywood;
+    /* border: solid 1px burlywood; */
+    font-size: 40px;
+    color: #edefee;
 }
 
 .hero-text {
-    height: 50%;
-    border: solid 1px hotpink;
+    height: 30%;
+    /* border: solid 1px hotpink; */
+    font-size: 18px;
+    padding-top: 5%;
+    color: #edefee;
 }
 
 .hero-button {
-    height: 24%;
-    border: solid 1px saddlebrown;
+    height: 50px;
+    width: 200px;
+    margin-top: 5%;
+    /* border: solid 1px saddlebrown; */
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4ce14;
+    border-radius: 16px;
 }
 
 .hero-image {
-    border: solid 1px bisque;
+    /* border: solid 1px bisque; */
     height: 500px;
-    width: 500px;
+    width: 400px;
     margin-left: auto;
+    background-image: url(/src/images/restauranfood.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    border-radius: 16px;
 }
