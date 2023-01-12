@@ -5,6 +5,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
     justify-content: space-between;
+    padding: 0 10%;
 }
 
 .hero-left {

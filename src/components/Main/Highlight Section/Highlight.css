@@ -3,6 +3,7 @@
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 5fr;
+    padding: 0 10%;
 }
 
 .highlight-left {

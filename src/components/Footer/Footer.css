@@ -1,6 +1,37 @@
 .footer-container {
     border: solid 1px turquoise;
-    width: 80%;
-    margin: 0 auto;
-    padding: 3% 0;
+    width: 100%;
+    margin: auto;
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'image nav . contact . social';
+}
+
+.footer-image {
+    grid-area: image;
+    border: solid 2px aqua;
+    width: 131px;
+    height: 175px;
+}
+
+.footer-nav {
+    grid-area: nav;
+}
+
+.fnav-title, .contact-title, .social-title {
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-social {
+    grid-area: social;
+}
+
+ul li {
+    list-style: none;
 }
