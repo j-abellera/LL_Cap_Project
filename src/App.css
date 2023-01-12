@@ -1,7 +1,7 @@
 #container {
-  display: flex;
+  display: grid;
+  grid-template-rows: 150px 1fr 200px;
   margin: auto;
-  flex-flow: row wrap;
   width: 1440px;
   height: 2900px;
   border: solid 2px red;

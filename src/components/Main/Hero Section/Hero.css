@@ -1,0 +1,40 @@
+.hero-container {
+    border: solid 3px gold;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: space-between;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    height: 15%;
+    border: solid 1px firebrick;
+}
+
+.hero-sub {
+    height: 10%;
+    border: solid 1px burlywood;
+}
+
+.hero-text {
+    height: 50%;
+    border: solid 1px hotpink;
+}
+
+.hero-button {
+    height: 24%;
+    border: solid 1px saddlebrown;
+}
+
+.hero-image {
+    border: solid 1px bisque;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+}

@@ -1,0 +1,11 @@
+.container {
+    /* border: solid 2px green; */
+    display: grid;
+    grid-template-rows: 2fr 2fr 1.5fr 1.5fr;
+    padding: 0 10%;
+}
+
+section {
+    border: solid 1px hotpink;
+    padding: 3% 0;
+}
