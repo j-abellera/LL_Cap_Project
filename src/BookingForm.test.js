@@ -83,3 +83,49 @@ test('success page shows necessary information', () => {
   const comments = screen.getByText('testcomment');
   expect(comments).toBeInTheDocument();
 })
+
+test('form wont submit on error', () => {
+  const form = {
+    name: '',
+    guests: '',
+    date: '',
+    time: '',
+    phone: '',
+    comments: 'testcomment'
+  }
+  render(
+    <Router>
+      <Reservations
+      form={form}
+      onChange={jest.fn()}
+      onSubmit={jest.fn()}
+      />
+    </Router>
+  )
+  const button = screen.getByTestId('submitbutton');
+  expect(button).toBeInTheDocument();
+  expect(button).toHaveAttribute('disabled');
+})
+
+test('form submit button active on valid form', () => {
+  const form = {
+    name: 'inputname',
+    guests: '1-2',
+    date: '2023-01-17',
+    time: '09:30',
+    phone: 1234567890,
+    comments: 'testcomment'
+  }
+  render(
+    <Router>
+      <Reservations
+      form={form}
+      onChange={jest.fn()}
+      onSubmit={jest.fn()}
+      />
+    </Router>
+  )
+  const button = screen.getByTestId('submitbutton');
+  expect(button).toBeInTheDocument();
+  expect(button).not.toHaveAttribute('disabled');
+})

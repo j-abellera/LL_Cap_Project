@@ -55,6 +55,14 @@ function Reservations(props) {
             return onSubmit(event)
     }
 
+    const isDisabled = () => {
+        if(form.name && form.guests && form.date && form.time && form.phone) {
+            return false
+        } else {
+            return true
+        }
+    }
+
     return (
         <>
         <div className='res-container'>
@@ -77,6 +85,7 @@ function Reservations(props) {
                         placeholder='Enter Name'
                         value={form.name}
                         onChange={onChange}
+                        pattern='[A-Za-z]{25}'
                         required
                     />
                 </div>
@@ -141,7 +150,8 @@ function Reservations(props) {
                         required
                     /> */}
                     <select name='time' onChange={onChange}>
-                        {form.date !== '' ? initializeTimes() : <option key='select-date-first' defaultValue=''>Select Date First</option>}
+                        <option key='default' defaultValue=''>Pick a time</option>
+                        {form.date !== '' ? initializeTimes() : <option key='select-date-first' defaultValue=''>Select date first</option>}
                     </select>
                 </div>
                 </div>
@@ -169,7 +179,7 @@ function Reservations(props) {
                     onChange={onChange}
                 />
                 </div>
-                <button id='submit' type='submit'>Submit</button>
+                <button data-testid='submitbutton' disabled={isDisabled()} id='submit' type='submit'>Submit</button>
             </form>
             <div className='img-btm'></div>
         </div>
