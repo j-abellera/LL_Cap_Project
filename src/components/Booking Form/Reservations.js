@@ -1,10 +1,62 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// import test from 'https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js'
 import './Reservations.css';
 
 function Reservations(props) {
+    // console.log(test)
     const { form, onChange, onSubmit } = props;
 
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js'
+        script.async = true;
+        script.type = 'text/javascript';
+        document.body.appendChild(script)
+        return () => {
+            document.body.appendChild(script)
+        }
+    },[])
+
+    const seededRandom = function (seed) {
+        var m = 2**35 - 31;
+        var a = 185852;
+        var s = seed % m;
+        return function () {
+            return (s = s * a % m) / m;
+        };
+    }
+
+    const fetchAPI = function(date) {
+        let result = [];
+        let random = seededRandom(date.getDate());
+        for(let i = 17; i <= 23; i++) {
+            if(random() < 0.5) {
+                result.push(i + ':00');
+            }
+            if(random() < 0.5) {
+                result.push(i + ':30');
+            }
+        }
+        return result;
+    };
+
+    const submitAPI = function(formData) {
+        return true;
+    };
+
+    const initializeTimes = () => {
+        const availableTimes = fetchAPI(new Date(form.date))
+        return availableTimes.map(time => <option key={time} defaultValue={time}>{time}</option>)
+    }
+
+    const handleSubmit = event => {
+        event.preventDefault()
+        if(submitAPI(form))
+            return onSubmit(event)
+    }
+
     return (
+        <>
         <div className='res-container'>
             <div className='img-top'></div>
             <h1 className='res-title'>Reserve A Table</h1>
@@ -15,7 +67,7 @@ function Reservations(props) {
                 <div className='line stat statitm4'></div>
                 <div className='circle stat statitm5'>3</div>
             </div>
-            <form className='form-container' onSubmit={onSubmit}>
+            <form className='form-container' onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='name'>What's Your Name?</label>
                     <input
@@ -81,13 +133,16 @@ function Reservations(props) {
                     </div>
                 <div>
                     <label htmlFor='time'>Time</label>
-                    <input
+                    {/* <input
                         name='time'
                         type='time'
                         value={form.time}
                         onChange={onChange}
                         required
-                    />
+                    /> */}
+                    <select name='time' onChange={onChange}>
+                        {form.date !== '' ? initializeTimes() : <option key='select-date-first' defaultValue=''>Select Date First</option>}
+                    </select>
                 </div>
                 </div>
                 <div>
@@ -118,6 +173,7 @@ function Reservations(props) {
             </form>
             <div className='img-btm'></div>
         </div>
+        </>
     )
 }
 

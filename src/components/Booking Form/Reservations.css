@@ -150,7 +150,7 @@ label[for=guests] {
     text-align: center;
 }
 
-#date-time input {
+#date-time input, select {
     height: 75px;
     width: 200px;
     text-align: center;
