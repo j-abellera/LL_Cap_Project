@@ -179,7 +179,7 @@ function Reservations(props) {
                     onChange={onChange}
                 />
                 </div>
-                <button data-testid='submitbutton' disabled={isDisabled()} id='submit' type='submit'>Submit</button>
+                <button aria-label="On Click" data-testid='submitbutton' disabled={isDisabled()} id='submit' type='submit'>Submit</button>
             </form>
             <div className='img-btm'></div>
         </div>
