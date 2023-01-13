@@ -8,15 +8,15 @@ function Navigation() {
         <div className='logo'></div>
         <nav className='nav'>
             <NavLink
-                className={active => 'nav-link' + (!active ? " unselected" : "active")}
-                // style={active => ({color: active ? "green" : "blue"})}
+                className='nav-link'
+                style={({isActive}) => ({color: isActive ? "#ee9972" : "#333333"})}
                 to='/'>Home
             </NavLink>
             <a className='nav-link' href='#about'>About</a>
             <a className='nav-link' href='#menu'>Menu</a>
             <NavLink
-                className={active => 'nav-link' + (!active ? " unselected" : "active")}
-                // style={active => ({color: active ? "green" : "blue"})}
+                className='nav-link'
+                style={({isActive}) => ({color: isActive ? "#ee9972" : "#333333"})}
                 to='/reservations'>Reservations
             </NavLink>
             <a className='nav-link' href='#order-online'>Order Online</a>
