@@ -68,7 +68,7 @@ h3 {
     color: #f4ce14;
 }
 
-.img-top, .img-btm {
+.sp-container .img-top, .sp-container .img-btm {
     width: 60%;
     margin: auto;
 }
