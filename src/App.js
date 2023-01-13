@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Header from './components/Header/Header.js';
 import Main from './components/Main/Main.js';
 import Footer from './components/Footer/Footer.js';
-import Reservations from './components/Reservations/Reservations.js';
+import Reservations from './components/Booking Form/Reservations.js';
 import SuccessPage from './components/SuccessPage/SucessPage.js';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
@@ -14,7 +14,8 @@ function App() {
     date: '',
     time: '',
     phone: '',
-    comments: ''
+    comments: '',
+    disabled: ''
   })
   const navigate = useNavigate();
 
