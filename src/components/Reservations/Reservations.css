@@ -1,6 +1,11 @@
 .res-container {
-    border: solid 1px navy;
+    /* border: solid 1px navy; */
     padding: 0 20%;
+}
+
+.res-title {
+    font-size: 64px;
+    text-align: center;
 }
 
 .img-top, .img-btm {
@@ -24,7 +29,7 @@
 }
 
 .status-bar {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display: flex;
     margin: auto;
     justify-content: center;
@@ -66,3 +71,89 @@
     );
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px seagreen; */
+    align-items: center;
+    font-size: 20px;
+    background-color: #495e57;
+    border-radius: 16px;
+    margin: 5% 0;
+}
+
+form label {
+    color: #edefee;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px seagreen; */
+    align-items: center;
+    margin: 2% 0;
+}
+
+.forminput {
+    width: 600px;
+    height: 75px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #edefee;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+#guests-input {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.guests-title {
+    width: 100%;
+    /* border: solid 3px black; */
+}
+
+label[for=guests] {
+    /* border: solid 1px gold; */
+    width: 100%;
+    text-align: center;
+}
+
+#submit {
+    height: 50px;
+    width: 200px;
+    margin-top: 5%;
+    /* border: solid 1px saddlebrown; */
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4ce14;
+    border-radius: 16px;
+    margin-bottom: 5%;
+}
+
+#date-time {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    justify-content: space-around;
+}
+
+#date-time label {
+    width: 100%;
+    text-align: center;
+}
+
+#date-time input {
+    height: 75px;
+    width: 200px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #edefee;
+}
