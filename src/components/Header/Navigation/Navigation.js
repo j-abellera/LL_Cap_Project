@@ -1,11 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
+    const navigate = useNavigate();
     return (
        <div className='nav-container'>
-        <div className='logo'></div>
+        <div onClick={() => navigate('/')} className='logo'></div>
         <nav className='nav'>
             <NavLink
                 className='nav-link'
